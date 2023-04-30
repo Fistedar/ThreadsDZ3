@@ -34,6 +34,8 @@ public class Main {
                 }));
         for (Thread thread : list) {
             thread.start();
+        }
+        for (Thread thread : list) {
             thread.join();
         }
         System.out.println("Красивых слов с длиной 3: " + count3 + " шт");
